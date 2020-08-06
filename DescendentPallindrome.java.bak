@@ -11,10 +11,10 @@ public class DescendentPallindrome {
 		Scanner scn = new Scanner(System.in);
 		System.out.println("Enter the number to check pallindrome or not");
 		int number = scn.nextInt();
-		Boolean status=pallindromeCheck(number);
-		System.out.println(status);
+		pallindromeCheck(number);
 	}
-	private static Boolean pallindromeCheck(int number) {
+
+	private static void pallindromeCheck(int number) {
 		Integer n = number;
 		List<Integer> list1 = new ArrayList<>();
 		List<Integer> list2 = new ArrayList<>();
@@ -30,11 +30,11 @@ public class DescendentPallindrome {
 			}
 			if (list1.equals(list2)) {
 				System.out.println("Integer itself is a pallindrome");
+			} else {
+						 
 			}
-			return true;
 		} else {
 			System.out.println("Only Even digits are allowed");
-			return false;
 		}
 
 	}
